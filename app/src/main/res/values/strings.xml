@@ -1,3 +1,27 @@
 <resources>
     <string name="app_name">ListView</string>
+    <string-array name="lv_name">
+        <item>から揚げ定食</item>
+        <item>ハンバーグ定食</item>
+        <item>生姜焼き定食</item>
+        <item>ステーキ定食</item>
+        <item>野菜炒め定食</item>
+        <item>とんかつ定食</item>
+        <item>ミンチカツ定食</item>
+        <item>チキンカツ定食</item>
+        <item>コロッケ定食</item>
+        <item>回鍋肉定食</item>
+        <item>麻婆豆腐定食</item>
+        <item>青椒肉絲定食</item>
+        <item>焼き魚定食</item>
+        <item>焼肉定食</item>
+    </string-array>
+    <string name="dialog_title">注文確認</string>
+    <string name="dialog_msg">選択された定食を注文します。よろしいですか。</string>
+    <string name="dialog_btn_ok">注文</string>
+    <string name="dialog_btn_ng">キャンセル</string>
+    <string name="btn_nu">問い合わせ</string>
+    <string name="dialog_ok_toast">ご注文ありがとうございます。</string>
+    <string name="dialog_ng_toast">ご注文をキャンセルしました。</string>
+    <string name="dialog_nu_toast">お問い合わせをおしらせください。</string>
 </resources>
