@@ -26,6 +26,8 @@ class MainActivity : AppCompatActivity() {
         val adapter = ArrayAdapter(this@MainActivity, android.R.layout.simple_list_item_1,
         menuList)
         binding.lvMenu.adapter = adapter
+
+        binding.lvMenu.onItemClickListener = ListItemClickListener()
     }
 
     private inner class ListItemClickListener : AdapterView.OnItemClickListener {
@@ -33,6 +35,9 @@ class MainActivity : AppCompatActivity() {
             val item = parent!!.getItemAtPosition(position) as String
             val show = "あなたが選んだ定食: " + item
             Toast.makeText(this@MainActivity, show, Toast.LENGTH_SHORT).show()
+
+            val dialogFragment = OrderConfirmDialogFragment()
+            dialogFragment.show(supportFragmentManager, "OrderConfirmDialogFragment")
         }
     }
 }
